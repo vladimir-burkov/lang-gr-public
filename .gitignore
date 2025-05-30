@@ -1,5 +1,4 @@
 !*.enc
 *.md
 node_modules
-*.js
 *.json
