@@ -8,8 +8,12 @@ const key = 'zzz'; // your encryption key
 // Get all files in the directory
 const files = fs.readdirSync(directoryPath);
 
-// Filter for .json and .md files
-const targetFiles = files.filter(file => file.endsWith('.json') || file.endsWith('.md'));
+// Filter for .json and .md files, but exclude package.json and package-lock.json
+const targetFiles = files.filter(file => {
+  const isJsonOrMd = file.endsWith('.json') || file.endsWith('.md');
+  const isNotPackageFiles = file !== 'package.json' && file !== 'package-lock.json';
+  return isJsonOrMd && isNotPackageFiles;
+});
 
 // Encrypt each file
 targetFiles.forEach(file => {
