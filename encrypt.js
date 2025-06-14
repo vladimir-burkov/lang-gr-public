@@ -3,7 +3,7 @@ const path = require('path');
 const CryptoJS = require('crypto-js');
 
 const directoryPath = '.'; // current folder
-const key = 'zzz'; // your encryption key
+const key = 'vova'; // your encryption key
 
 // Get all files in the directory
 const files = fs.readdirSync(directoryPath);
