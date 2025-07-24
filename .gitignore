@@ -2,6 +2,7 @@
 abc.md.enc
 ai.md.enc
 tz.md.enc
+noun.md.enc
 
 # Allow all other .md.enc files
 !*.md.enc
