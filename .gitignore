@@ -2,3 +2,6 @@
 *.md
 node_modules
 *.json
+
+abc.md.enc
+ai.md.enc
