@@ -1,8 +1,12 @@
-!*.enc
-*.md
-node_modules
-*.json
-
+# Ignore only these specific files
 abc.md.enc
 ai.md.enc
 tz.md.enc
+
+# Allow all other .md.enc files
+!*.md.enc
+
+# Other ignores
+*.md
+node_modules
+*.json
