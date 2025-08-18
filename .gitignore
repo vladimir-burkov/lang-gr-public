@@ -1,13 +1,7 @@
-# Ignore only these specific files
-abc.md.enc
-ai.md.enc
-tz.md.enc
-noun.md.enc
-
-# Allow all other .md.enc files
-!*.md.enc
-
-# Other ignores
+# Ignore all .md files anywhere
 *.md
 node_modules
 *.json
+
+# Ignore all files in the /ready folder
+/ready/*
